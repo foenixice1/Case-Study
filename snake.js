@@ -7,12 +7,14 @@ const ground = new Image() ;
 const foodImg = new Image() ;
 let dead = new Audio() ;
 let eat = new Audio();
+let background_music = new Audio();
 let gameover = new Image()
 ground.src = "img/ground.png" ;
 foodImg.src= "img/food.png" ;
 dead.src = "audio/dead.mp3" ;
 eat.src = "audio/eat.mp3";
 gameover.src = "img/gameover.png";
+background_music.src = "audio/background_music.mp3"
 
 let snake = [] ;
 snake[0] = {
@@ -30,6 +32,7 @@ let score = 0;
 
 function start() {
     document.getElementById("start").style.display = 'none';
+    background_music.play();
 
     let d;
     document.addEventListener("keydown",direction);

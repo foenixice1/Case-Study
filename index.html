@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Snake</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<h1>GAME SNAKE</h1>
+<h2 id="Score" class="out"></h2>
+<div id="start"  >
+    <div  class="in">
+        <h2>
+            Luật chơi
+        </h2>
+        <p>Người chơi sẽ điều kiển con sắn của mình sao cho ghi được nhiều điểm nhất. Mỗi lần người chơi ăn được một thức ăn sẽ được cộng 1 điểm.
+            Nếu người chơi va chạm vào tường hoặc điền khiển rắn cắn vào đuôi thì trò chơi sẽ kết thúc.
+        </p>
+        <h2>Hưỡng dẫn</h2>
+        <p>Sử dụng các phím mũi tên để điều kiển trái , phải , lên ,xuống rắn</p>
+
+    </div>
+    <button onclick="start()" style="size: 30px">Start</button>
+
+</div>
+
+<body background="https://thumbs.gfycat.com/ClosedMeekDormouse-max-1mb.gif">
+<canvas id="snake" width="608" height="608" ></canvas>
+<script src="snake.js"></script>
+
+</body>
+</html>
